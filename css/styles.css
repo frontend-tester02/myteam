@@ -1,3 +1,63 @@
+/* CUSTOM-PROPS */
+:root {
+  --midnight-green:#014E56;
+  --light-coral:#F67E7E;
+  --white:#fff;
+  --rapture-blue:#79C8C7;
+  --police-blue:#2C6269;
+  --deep-green:#004047;
+  --sacramento-green:#012F34;
+  --dark-green:#002529;
+
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-Bold.woff2') format('woff2'),
+      url('../fonts/Livvic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-Regular.woff2') format('woff2'),
+      url('../fonts/Livvic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-BoldItalic.woff2') format('woff2'),
+      url('../fonts/Livvic-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-SemiBold.woff2') format('woff2'),
+      url('../fonts/Livvic-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+      url('../fonts/Livvic-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
 /* GLOBAL STYLES */
 
 html {
@@ -18,11 +78,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family:'Livvic', "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  background-color: var(--midnight-green);
+  color: #fff;
 }
 
 img {
@@ -72,9 +133,9 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1200;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
